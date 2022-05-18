@@ -32,7 +32,7 @@ char **split_into_arguments(char *line)
 			tok = strtok(NULL, " \n");
 			i++;
 
-			if (i >= commands_size)
+			if (i >= commands_size) 
 			{
 				commands_size += 1024;
 				commands = _realloc(commands, commands_size,
